@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Bienvenido{% if user.is_authenticated %}, {{ user.username }}{% endif %}</h1>
+<p>Esta es la página principal de tu aplicación.</p>
+{% endblock %}
